@@ -1,0 +1,25 @@
+[gd_resource type="SpriteFrames" load_steps=4 format=3 uid="uid://cqt2iyw5i08im"]
+
+[ext_resource type="Texture2D" uid="uid://tu2w0okji2ka" path="res://Sprites/Characters/Enemy_Bat_0.tres" id="1_li8xs"]
+[ext_resource type="Texture2D" uid="uid://cmr0fw0ocy24u" path="res://Sprites/Characters/Enemy_Bat_1.tres" id="2_1df81"]
+[ext_resource type="Texture2D" uid="uid://durwinl3lhmyj" path="res://Sprites/Characters/Enemy_Bat_2.tres" id="3_at6nr"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_li8xs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_1df81")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_at6nr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_1df81")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

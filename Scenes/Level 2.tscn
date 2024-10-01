@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=4 uid="uid://cg17sbmbx6j7r"]
 
-[ext_resource type="TileSet" uid="uid://b8dx4mbllowdp" path="res://Background Tile Set.tres" id="1_d11l3"]
-[ext_resource type="TileSet" uid="uid://w6xp5xoc3ffv" path="res://Terrain Tile Set.tres" id="2_d0h20"]
+[ext_resource type="TileSet" uid="uid://b8dx4mbllowdp" path="res://Sprites/Tiles/Background Tile Set.tres" id="1_d11l3"]
+[ext_resource type="TileSet" uid="uid://w6xp5xoc3ffv" path="res://Sprites/Tiles/Terrain Tile Set.tres" id="2_d0h20"]
 [ext_resource type="PackedScene" uid="uid://dp7sk8vdivtbw" path="res://Scenes/Prefabs/Characters/Player.tscn" id="3_56bxl"]
 [ext_resource type="PackedScene" uid="uid://c5f5mnadwf2re" path="res://Scenes/Prefabs/Characters/Enemy.tscn" id="4_fxpta"]
 [ext_resource type="PackedScene" uid="uid://b0rsg0lp26wvm" path="res://Scenes/Prefabs/Characters/Spikes.tscn" id="5_c8ido"]

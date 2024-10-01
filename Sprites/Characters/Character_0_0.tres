@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://f0nekbuq1jbq"]
+
+[ext_resource type="Texture2D" uid="uid://cdwnxug8y81hd" path="res://Sprites/Characters/tilemap-characters.png" id="1_b5ags"]
+
+[resource]
+atlas = ExtResource("1_b5ags")
+region = Rect2(0, 0, 24, 24)
