@@ -1,9 +1,10 @@
 [gd_resource type="TileSet" load_steps=3 format=3 uid="uid://b8dx4mbllowdp"]
 
-[ext_resource type="Texture2D" uid="uid://xmqv7n0k0bwm" path="res://Sprites/Tiles/tilemap-backgrounds_packed.png" id="1_e0xi1"]
+[ext_resource type="Texture2D" uid="uid://cl2xygvp6ifxh" path="res://Sprites/Tiles/tilemap-backgrounds.png" id="1_x5vey"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f720g"]
-texture = ExtResource("1_e0xi1")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0l5qj"]
+texture = ExtResource("1_x5vey")
+separation = Vector2i(1, 1)
 texture_region_size = Vector2i(24, 24)
 0:0/0 = 0
 1:0/0 = 0
@@ -14,7 +15,6 @@ texture_region_size = Vector2i(24, 24)
 6:0/0 = 0
 7:0/0 = 0
 0:1/0 = 0
-1:1/next_alternative_id = 2
 1:1/0 = 0
 2:1/0 = 0
 3:1/0 = 0
@@ -33,4 +33,4 @@ texture_region_size = Vector2i(24, 24)
 
 [resource]
 tile_size = Vector2i(24, 24)
-sources/0 = SubResource("TileSetAtlasSource_f720g")
+sources/0 = SubResource("TileSetAtlasSource_0l5qj")
