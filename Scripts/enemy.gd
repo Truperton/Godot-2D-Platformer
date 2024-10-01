@@ -5,11 +5,12 @@ extends Area2D
 
 var start_pos : Vector2
 var end_pos : Vector2
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	start_pos = global_position
 	end_pos = global_position + move_direction
-
+	$AnimatedSprite2D.play()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -19,6 +20,12 @@ func _process(delta: float) -> void:
 		var temp_pos : Vector2 = start_pos
 		start_pos = end_pos
 		end_pos = temp_pos
+		
+		if end_pos.x - start_pos.x > 0:
+			$AnimatedSprite2D.flip_h = true
+		else:
+			$AnimatedSprite2D.flip_h = false
+	
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("Player"):
