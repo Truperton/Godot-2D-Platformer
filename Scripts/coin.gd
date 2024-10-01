@@ -6,6 +6,9 @@ var bob_speed : float = 5
 @onready var start_y : float = global_position.y
 var t : float = 0
 
+func _ready() -> void:
+	$AnimatedSprite2D.play()
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	t += delta

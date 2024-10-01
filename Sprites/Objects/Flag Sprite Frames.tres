@@ -1,0 +1,18 @@
+[gd_resource type="SpriteFrames" load_steps=3 format=3 uid="uid://b8ins7jbn15u5"]
+
+[ext_resource type="Texture2D" uid="uid://byl3hehon2e36" path="res://Sprites/Objects/Flag_0.tres" id="1_oaoes"]
+[ext_resource type="Texture2D" uid="uid://j77qlwnmpbat" path="res://Sprites/Objects/Flag_1.tres" id="2_hjaqx"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_oaoes")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_hjaqx")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
