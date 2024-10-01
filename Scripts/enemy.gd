@@ -19,8 +19,6 @@ func _process(delta: float) -> void:
 		var temp_pos : Vector2 = start_pos
 		start_pos = end_pos
 		end_pos = temp_pos
-	
-
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("Player"):

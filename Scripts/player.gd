@@ -11,6 +11,9 @@ var score : int = 0
 func _physics_process(delta: float) -> void:
 	if not is_on_floor():
 		velocity.y += gravity * delta
+		$AnimatedSprite2D.animation = "jump"
+	else:
+		$AnimatedSprite2D.animation = "run"
 	
 	velocity.x = 0
 	
@@ -21,6 +24,17 @@ func _physics_process(delta: float) -> void:
 	
 	if Input.is_key_pressed(KEY_UP) and is_on_floor():
 		velocity.y = -jump_force
+	
+	
+	if velocity.length() > 0:
+		$AnimatedSprite2D.play()
+	else:
+		$AnimatedSprite2D.stop()
+	
+	if velocity.x < 0:
+		$AnimatedSprite2D.flip_h = false
+	elif velocity.x > 0:
+		$AnimatedSprite2D.flip_h = true
 	
 	move_and_slide()
 	
