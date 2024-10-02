@@ -10,10 +10,11 @@ config_version=5
 
 [application]
 
-config/name="Create a 2D Platformer with Godot 4"
+config/name="Godot 2D Platformer"
 run/main_scene="res://Scenes/Level 1.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
+config/tags=PackedStringArray("2d", "platformer")
 
 [dotnet]
 
