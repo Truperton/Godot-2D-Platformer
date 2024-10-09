@@ -15,12 +15,20 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_8pqp4")
+"texture": ExtResource("2_64rr4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_64rr4")
+"texture": ExtResource("1_8pqp4")
 }],
 "loop": true,
 "name": &"run",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_8pqp4")
+}],
+"loop": true,
+"name": &"stand",
 "speed": 5.0
 }]

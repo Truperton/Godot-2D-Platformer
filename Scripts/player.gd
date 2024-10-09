@@ -12,8 +12,6 @@ func _physics_process(delta: float) -> void:
 	if not is_on_floor():
 		velocity.y += gravity * delta
 		$AnimatedSprite2D.animation = "jump"
-	else:
-		$AnimatedSprite2D.animation = "run"
 	
 	velocity.x = 0
 	
@@ -27,8 +25,10 @@ func _physics_process(delta: float) -> void:
 	
 	
 	if velocity.length() > 0:
+		$AnimatedSprite2D.animation = "run"
 		$AnimatedSprite2D.play()
 	else:
+		$AnimatedSprite2D.animation = "stand"
 		$AnimatedSprite2D.stop()
 	
 	if velocity.x < 0:

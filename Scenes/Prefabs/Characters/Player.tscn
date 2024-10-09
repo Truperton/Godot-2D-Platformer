@@ -1,12 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://dp7sk8vdivtbw"]
+[gd_scene load_steps=6 format=3 uid="uid://dp7sk8vdivtbw"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_8b0uw"]
 [ext_resource type="SpriteFrames" uid="uid://c373p6pbq7k0u" path="res://Sprites/Characters/Character_0 Sprite Frames.tres" id="2_5cwmb"]
+[ext_resource type="FontFile" uid="uid://d13nids25hvqc" path="res://Sprites/UI/Kenney Pixel.ttf" id="3_fu6wc"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_j4t16"]
 height = 24.0
 
 [sub_resource type="LabelSettings" id="LabelSettings_rt85s"]
+font = ExtResource("3_fu6wc")
 font_size = 48
 shadow_color = Color(0, 0, 0, 0.34902)
 
@@ -16,7 +18,7 @@ jump_force = 250.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = ExtResource("2_5cwmb")
-animation = &"run"
+animation = &"stand"
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
